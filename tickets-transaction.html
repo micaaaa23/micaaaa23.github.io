@@ -7,78 +7,174 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="css/style2.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <title></title>
-
-
 </head>
-<body>
-    <div class="'container-fluid my-3 mx-5">
-        <div class ="display-3 fw-bold text-decoration-underline mb-4 text-danger">Ticketing System </div>
 
+<!-- Banner -->
+<body>
+    <div class="container-fluid my-3 mx-auto">
+    <div class="display-3 fw-bold text-decoration-underline mb-4 text-danger text-center">Badminton Equipments Ordering System</div>
+</div>
+
+<!--To Pay-->
         <div class="g-2 row my-5 mx-4">
             <div class="col-lg-3 ">
                 <div class="card text-bg-success">
                     <div class="card-header">
-                    Completed
-                    </div>
-                        <div class="card-body">
-
-                        <div class="row"></div>
-                            <i class="bi bi-patch-check-fill fs-1"></i>
-                            3
-                        </div>
-
-                </div>
-        </div>
-<div class="col-lg-3">
-                <div class="card text-bg-danger">
-                    <div class="card-header">
-                    On Going
-                    </div>
-                        <div class="card-body">
-
-                        <div class="row"></div>
-                            <i class="bi bi-pencil-fill fs-1"></i>
-                            3
-                        </div>
-
-                </div>
-        </div>
-
-<div class="col-lg-3">
-                <div class="card text-bg-primary">
-                    <div class="card-header">
-                    On Queue
+                    To Pay
                     </div>
                         <div class="card-body">
                         <div class="d-flex align-items-center justify-content-around">
-                        <i class="bi bi-list-task fs-1"></i>
-                            <span class="fs-1 text-secondary">3</span></div>
+                            <i class="bi bi-credit-card-fill fs-1"></i>
+                            <span class="fs-1 text-light">3</span></div>
+                        </div>
+
+                </div>
+        </div>
+
+<!--To Ship-->
+            <div class="col-lg-3">
+                            <div class="card text-bg-danger">
+                                <div class="card-header">
+                                To Ship
+                                </div>
+                                    <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-around">
+                                        <i class="bi bi-truck fs-1"></i>
+                                        <span class="fs-1 text-light">3</span></div>
+                                    </div>
+
+                            </div>
+                    </div>
+
+<!--To Receive-->
+            <div class="col-lg-3">
+                <div class="card text-bg-primary">
+                    <div class="card-header">
+                    To Receive
+                    </div>
+                        <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-around">
+                        <i class="fa fa-car" style="font-size:48px;"></i>
+                            <span class="fs-1 text-light">3</span></div>
 
                         </div>
 
                 </div>
         </div>
+
+<!--To Rate-->
         <div class="col-lg-3">
                 <div class="card text-bg-warning">
                     <div class="card-header">
-                    Overdue
+                    To Rate
                     </div>
                         <div class="card-body">
-
-                        <div class="row"></div>
-                            <i class="bi bi-exclamation-circle-fill fs-1"></i>
-                            3
+                        <div class="d-flex align-items-center justify-content-around">
+                            <i class="bi bi-ticket-perforated fs-1"></i>
+                            <span class="fs-1 text-light">3</span></div>
                         </div>
 
                 </div>
         </div>
 
 
+<!-- First Accordion -->
+<div class="accordion" id="accordionExample" data-bs-theme="light">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                On-Going Order
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+<!-- Table for To Pay -->
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Receipt No.</th>
+                            <th scope="col">Equipment</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Model Number</th>
+                            <th scope="col">Date Ordered</th>
+                            <th scope="col">Date of Shipment</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">RCN-20231019</th>
+                            <td>Badminton Racket</td>
+                            <td>Yonex <br>
+                            <img src="css\Yonex.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
+                            <td>ASTROX 3 DG HF</td>
+                            <td>AX3DG HF</td>
+                            <td>2023-10-29</td>
+                            <td>2023-11-05</td>
+                            <td>Pending</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">RCN-20231020</th>
+                            <td>Badminton Racket</td>
+                            <td>Victor <br>
+                            <img src="css\victor.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
+                            <td>THRUSTER K 3399</td>
+                            <td>TK-3399</td>
+                            <td>2023-10-27</td>
+                            <td>2023-11-08</td>
+                            <td>Pending</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">RCN-20231022</th>
+                            <td>Badminton Racket</td>
+                            <td>Prince
+                            <br>
+                            <img src="css\Prince.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
+                            <td>Hornet </td>
+                            <td>7B693</td>
+                            <td>2023-10-30</td>
+                            <td>2023-11-10</td>
+                            <td><span class="badge bg-primary rounded-pill">ongoing</span></td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">RCN-20231004</th>
+                            <td>Badminton Shoes</td>
+                            <td>Mizuno<br>
+                            <img src="css\Mizuno.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
+                            <td>Wave Fang NX</td>
+                            <td>FANG XT3</td>
+                            <td>2023-11-11</td>
+                            <td>2023-11-20e</td>
+                            <td>Pending Overdue</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">RCN-20231010</th>
+                            <td>Badminton Shoes</td>
+                            <td>Li-Ning <img src="css\Li-Ning.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
+                            <td>ALL AROUND KING V</td>
+                            <td>297211</td>
+                            <td>2023-11-25</td>
+                            <td>2023-11-29</td>
+                            <td>Pending Overdue</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+
+                            </div>
+                            </div>
+                        </div>
 
 
 
@@ -88,12 +184,12 @@
 
 
 
-
-
-
-
-
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+          <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
 
