@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="css/style2.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <title></title>
+    <title>Palapar | Project</title>
+    <style>
+    </style>
+
 </head>
-
-<!-- Banner -->
 <body>
-    <div class="container-fluid my-3 mx-auto">
-    <div class="display-3 fw-bold text-decoration-underline mb-4 text-danger text-center">Badminton Equipments Ordering System</div>
-</div>
+        <!-- Banner -->
+        <body style="font-family: 'Verdana', sans-serif; background-image: url('css\Premium Photo _ Shuttlecocks and badminton racket on black background_sport concept, concept winner, copy space imag.jfif'); background-size: cover;">
+        <body>
+            <div class="container-fluid my-3 mx-auto">
+            <div class="display-3 fw-bold text-decoration-underline mb-4 text-danger text-center">Badminton Equipments Ordering System</div>
+        </div>
 
 <!--To Pay-->
         <div class="g-2 row my-5 mx-4">
@@ -31,12 +31,11 @@
                         <div class="card-body">
                         <div class="d-flex align-items-center justify-content-around">
                             <i class="bi bi-credit-card-fill fs-1"></i>
-                            <span class="fs-1 text-light">3</span></div>
+                            <span class="fs-1 text-light">5</span></div>
                         </div>
 
                 </div>
         </div>
-
 <!--To Ship-->
             <div class="col-lg-3">
                             <div class="card text-bg-danger">
@@ -51,7 +50,6 @@
 
                             </div>
                     </div>
-
 <!--To Receive-->
             <div class="col-lg-3">
                 <div class="card text-bg-primary">
@@ -61,7 +59,7 @@
                         <div class="card-body">
                         <div class="d-flex align-items-center justify-content-around">
                         <i class="fa fa-car" style="font-size:48px;"></i>
-                            <span class="fs-1 text-light">3</span></div>
+                            <span class="fs-1 text-light">1</span></div>
 
                         </div>
 
@@ -77,25 +75,264 @@
                         <div class="card-body">
                         <div class="d-flex align-items-center justify-content-around">
                             <i class="bi bi-ticket-perforated fs-1"></i>
-                            <span class="fs-1 text-light">3</span></div>
+                            <span class="fs-1 text-light">0</span></div>
                         </div>
 
                 </div>
         </div>
+        <div class="container-fluid px-4 py-2">
+      <div class="row">
 
+<!-- /<div class=" divider"></div> -->
+      <div class="container-fluid px-4 py-2">
+        <div class="row">
+          <button type="button" class="btn btn-primary" id="add-ticket">Add Ticket</button>
+        </div>
+        </div>
 
-<!-- First Accordion -->
-<div class="accordion" id="accordionExample" data-bs-theme="light">
-    <div class="accordion-item">
+<!-- ONGOING TABLE -->
+<section class="accordion container-fluid" id="accordion-table-ongoing">
+  <div class="accordion-item acc-warning">
+    <!-- ACC HEADER -->
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-table-ongoing" aria-expanded="true" aria-controls="acc-table-ongoing">
+        <div class="text-primary fw-bold">To Pay</div>
+      </button>
+    </h2>
+
+    <!-- First Accordion -->
+    <div id="acc-table-ongoing" class="accordion-collapse collapse show" data-bs-parent="#accordion-table-ongoing">
+      <div class="accordion-body">
+        <!-- Table -->
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+            <tr>
+              <th scope="col">Receipt No.</th>
+              <th scope="col">Equipment</th>
+              <th scope="col">Brand</th>
+              <th scope="col">Model</th>
+              <th scope="col">Model Number</th>
+              <th scope="col">Date Ordered</th>
+              <th scope="col">Date of Shipment</th>
+              <th scope="col">Status</th>
+              <th scope="col" class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- First Table -->
+            <tr>
+              <th scope="row">RCN-20231020</th>
+              <td>Badminton Racket</td>
+              <td>
+                Victor <br>
+                <img src="victor.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+              </td>
+              <td>THRUSTER K 3399</td>
+              <td>TK-3399</td>
+              <td>2023-10-27</td>
+              <td>2023-11-08</td>
+              <td class="align-middle"><span class="badge rounded-pill text-bg-success">Pending</span></td>
+              <td class="align-middle text-center d-flex justify-content-between">
+                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                <button class="btn btn-primary delete-ticket">Delete</button>
+            </td>
+            </tr>
+
+            <!-- Second Table -->
+            <tr>
+              <th scope="row">RCN-20233420</th>
+              <td>Shoes</td>
+              <td>
+                Li-Ning <br>
+                <img src="Li-Ning.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+              </td>
+              <td>Li-Ning 3699</td>
+              <td>TK-3399</td>
+              <td>2023-10-30</td>
+              <td>2023-11-05</td>
+              <td class="align-middle"><span class="badge rounded-pill text-bg-warning">ongoing</span></td>
+              <td class="align-middle text-center d-flex justify-content-between">
+                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                <button class="btn btn-primary delete-ticket">Delete</button>
+            </td>
+            </tr>
+
+            <!-- Third Table -->
+            <tr>
+              <th scope="row">RCN-52231020</th>
+              <td>Racket</td>
+              <td>
+                Mizuno <br>
+                <img src="Yonex.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+              </td>
+              <td>Mizuno 133F349</td>
+              <td>TK-3399</td>
+              <td>2023-10-17</td>
+              <td>2023-11-18</td>
+              <td class="align-middle"><span class="badge rounded-pill text-bg-success">pending</span></td>
+              <td class="align-middle text-center d-flex justify-content-between">
+                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                <button class="btn btn-primary delete-ticket">Delete</button>
+            </td>
+            </tr>
+
+            <!-- Fourth Table -->
+            <tr>
+              <th scope="row">RCN-20231022</th>
+              <td>Badminton Racket</td>
+              <td>
+                Prince <br>
+                <img src="Prince.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+              </td>
+              <td>Hornet</td>
+              <td>7B693</td>
+              <td>2023-10-30</td>
+              <td>2023-11-10</td>
+              <td class="align-middle"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span><span class="badge rounded-pill text-bg-primary">overdue</span></td>
+              <td class="align-middle text-center d-flex justify-content-between">
+                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                <button class="btn btn-primary delete-ticket">Delete</button>
+            </td>
+            </tr>
+
+            <!-- Fifth Table -->
+            <tr>
+            <th scope="row">RCN-20231020</th>
+            <td>Badminton Racket</td>
+            <td>
+            Victor <br>
+            <img src="victor.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+            </td>
+            <td>THRUSTER K 3399</td>
+            <td>TK-3399</td>
+            <td>2023-10-27</td>
+            <td>2023-11-08</td>
+            <td class="align-middle"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span><span class="badge rounded-pill text-bg-primary">overdue</span></td>
+            <td class="align-middle text-center d-flex justify-content-between">
+                                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                                <button class="btn btn-primary delete-ticket">Delete</button>
+                            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- Second Accordion -->
+<section class="accordion container-fluid" id="accordion-table-onqueue">
+    <div class="accordion-item acc-secondary">
+        <!-- ACC HEADER -->
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                On-Going Order
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-table-onqueue" aria-expanded="true" aria-controls="acc-table-onqueue">
+                <div class="text-dark fw-bold">To Ship</div>
             </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <!-- ACC BODY -->
+        <div id="acc-table-onqueue" class="accordion-collapse collapse show" data-bs-parent="#accordion-table-onqueue">
             <div class="accordion-body">
+                <!-- Table Proper -->
+                <!-- Table for Another Accordion -->
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Receipt No.</th>
+                            <th scope="col">Equipment</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Model Number</th>
+                            <th scope="col">Date Ordered</th>
+                            <th scope="col">Date of Shipment</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Second Table -->
+                        <tr>
+                            <th scope="row">RCN-52231020</th>
+                            <td>Shoes</td>
+                            <td>Mizuno <br>
+                                <img src="Mizuno.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+                            </td>
+                            <td>Mizuno 1 33F349</td>
+                            <td>TK-3399</td>
+                            <td>2023-10-17</td>
+                            <td>2023-11-18</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger me-1">To Receive</span><span class="badge rounded-pill text-bg-primary">overdue</span></td>
+                            <td class="align-middle text-center d-flex justify-content-between">
+                                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                                <button class="btn btn-primary delete-ticket">Delete</button>
+                            </td>
+                        </tr>
 
-<!-- Table for To Pay -->
+                        <!-- Third Table -->
+                        <tr>
+                            <th scope="row">RCN-20231021</th>
+                            <td>Badminton Racket</td>
+                            <td>Victor <br>
+                                <img src="victor.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+                            </td>
+                            <td>THRUSTER K 3399</td>
+                            <td>TK-3399</td>
+                            <td>2023-10-27</td>
+                            <td>2023-11-08</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-warning me-1">Overdue</span></td>
+                            <td class="align-middle text-center d-flex justify-content-between">
+                                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                                <button class="btn btn-primary delete-ticket">Delete</button>
+                            </td>
+                        </tr>
+
+                        <!-- Fourth Table -->
+                        <tr>
+                            <th scope="row">RCN-20231022</th>
+                            <td>Badminton Racket</td>
+                            <td>Prince
+                                <br>
+                                <img src="Prince.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+                            </td>
+                            <td>Hornet </td>
+                            <td>7B693</td>
+                            <td>2023-10-30</td>
+                            <td>2023-11-10</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger me-1">To Receive</span><span class="badge rounded-pill text-bg-primary">overdue</span></td>
+                            <td class="align-middle text-center d-flex justify-content-between">
+                                <button class="btn btn-secondary me-1 view-ticket">view</button>
+                                <button class="btn btn-info me-1 edit-ticket">Edit</button>
+                                <button class="btn btn-primary delete-ticket">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Third Accordion -->
+<div class="accordion" id="accordionExample3" data-bs-theme="light">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                To-Receive
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+            <div class="accordion-body">
+                <!-- Table for Another Accordion -->
                 <table class="table table-bordered table-hover">
                     <thead class="thead-dark">
                         <tr>
@@ -112,81 +349,168 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">RCN-20231019</th>
-                            <td>Badminton Racket</td>
-                            <td>Yonex <br>
-                            <img src="css\Yonex.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
-                            <td>ASTROX 3 DG HF</td>
-                            <td>AX3DG HF</td>
-                            <td>2023-10-29</td>
-                            <td>2023-11-05</td>
-                            <td>Pending</td>
-                            <td><button class="btn btn-primary">View</button></td>
+                            <th scope="row">RCN-52231045</th>
+                            <td> Shoes</td>
+                            <td>Mizuno <br>
+                                <img src="css\Mizuno.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;">
+                            </td>
+                            <td>Mizuno 1 33F349</td>
+                            <td>TK-3099</td>
+                            <td>2023-10-17</td>
+                            <td>2023-11-18</td>
+                            <td><span class="badge bg-danger rounded-pill">Received</span></td>
+                                <td class="align-middle text-center">
+                                <button class="btn btn-secondary view-ticket" data-bs-toggle="modal" data-bs-target="#viewTicketModal">View</button>
+                                <button class="btn btn-info edit-ticket">Edit</button>
+                                <button class="btn btn-primary delete-ticket">Delete</button>
+                            </td>
+                            </td>
                         </tr>
-                        <tr>
-                            <th scope="row">RCN-20231020</th>
-                            <td>Badminton Racket</td>
-                            <td>Victor <br>
-                            <img src="css\victor.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
-                            <td>THRUSTER K 3399</td>
-                            <td>TK-3399</td>
-                            <td>2023-10-27</td>
-                            <td>2023-11-08</td>
-                            <td>Pending</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">RCN-20231022</th>
-                            <td>Badminton Racket</td>
-                            <td>Prince
-                            <br>
-                            <img src="css\Prince.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
-                            <td>Hornet </td>
-                            <td>7B693</td>
-                            <td>2023-10-30</td>
-                            <td>2023-11-10</td>
-                            <td><span class="badge bg-primary rounded-pill">ongoing</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">RCN-20231004</th>
-                            <td>Badminton Shoes</td>
-                            <td>Mizuno<br>
-                            <img src="css\Mizuno.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
-                            <td>Wave Fang NX</td>
-                            <td>FANG XT3</td>
-                            <td>2023-11-11</td>
-                            <td>2023-11-20e</td>
-                            <td>Pending Overdue</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">RCN-20231010</th>
-                            <td>Badminton Shoes</td>
-                            <td>Li-Ning <img src="css\Li-Ning.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px; height: auto;"></td>
-                            <td>ALL AROUND KING V</td>
-                            <td>297211</td>
-                            <td>2023-11-25</td>
-                            <td>2023-11-29</td>
-                            <td>Pending Overdue</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
-                            </div>
+
+<!--Modals-->
+
+<div class="modal fade" id="viewTicketModal" tabindex="-1" aria-labelledby="view-ticket-label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+
+            <div class="modal-header bg-warning" id="modal-header">
+              <h1 class="modal-title fs-5" id="view-ticket-label">Ticket Details for <span class="fw-bold" id="modal-ticket-no">TIX-20231006 [On Going]</span></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <div class="container">
+                <form class="requires-validation" novalidate>
+                  <div class="row">
+            <!-- Equipment-->
+                    <label for="field-status" class="col-form-label col-3 fw-bold text-end">Equipment</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="field-status" id="field-status" value="In Progress" disabled>
+                    </div>
+
+                    <!-- Brand-->
+                    <label for="request-title" class="col-form-label col-3 fw-bold text-end">Brand</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="request-title" id="request-title" value="Additional Module Access" disabled>
+                    </div>
+
+                    <!-- Model-->
+                    <label for="ordered-by" class="col-form-label col-3 fw-bold text-end">Model:</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="ordered-by" id="ordered-by" value="John Doe" disabled>
+                    </div>
+
+                    <!-- Number-->
+                    <label for="location" class="col-form-label col-3 fw-bold text-end">Number:</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="location" id="location" value="Office" disabled>
+                    </div>
+
+                    <!-- Date Ordered-->
+                    <label for="ordered-date" class="col-form-label col-3 fw-bold text-end">Date Ordered:</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="ordered-date" id="ordered-date" value="2023-01-15" disabled>
+                    </div>
+
+                    <!-- Date of Shipment-->
+                    <label for="shipment-date" class="col-form-label col-3 fw-bold text-end">Date of Shipment:</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="shipment-date" id="shipment-date" value="2023-02-01" disabled>
+                    </div>
+
+                    <!-- Status-->
+                    <label for="quantity" class="col-form-label col-3 fw-bold text-end">Status:</label>
+                    <div class="col-9">
+                        <input type="text" class="form-control form-control-sm" name="quantity" id="quantity" value="5" disabled>
                             </div>
                         </div>
+                    </form>
+                </div>
+            </div>
+
+<!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning d-none" id="modal-btn-process"  data-bs-dismiss="modal">Process Ticket</button>
+              <button type="button" class="btn btn-success d-none" id="modal-btn-complete" data-bs-dismiss="modal">Complete Ticket</button>
+              <button type="button" class="btn btn-success d-none" id="modal-btn-save" data-bs-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-primary d-none" id="modal-btn-create">Create Ticket</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 
+      <!-- DELETE MODAL -->
+    <div class="modal fade" id="deleteTicketModal" tabindex="-1" aria-labelledby="delete-ticket-label" aria-hidden="true">
+        <div class="modal-dialog modal-md ">
+            <div class="modal-content">
+                <div class="modal-header bg-danger" id="modal-header">
+                    <h1 class="modal-title fs-5" id="delete-ticket-label">Confirm Delete</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div id="delete-prompt">Are you sure you want to delete </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-danger" id="modal-btn-delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- CONFIRM MODAL -->
+    <div class="modal fade" id="confirmTicketModal" tabindex="-1" aria-labelledby="confirm-ticket-label" aria-hidden="true">
+        <div class="modal-dialog modal-md ">
+            <div class="modal-content">
+                <div class="modal-header" id="modal-header">
+                    <h1 class="modal-title fs-5" id="confirm-ticket-label">Confirm Record</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div id="confirm-prompt">Are you sure you want to delete </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-success" id="modal-btn-yes">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Toast -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <div class="toast-container bottom-right-toast p-3"></div>
+    </div>
 
+    <footer class="bg-light">
+        <div class="container-fluid py-2">
+            <div class="row justify-content-between">
+                <div class="col text-info fw-bold ps-4"><a href="#">Ticketing System@2023</a></div>
+                <div class="col text-end pe-4"><a href="" class="text-dark text-decoration-none">Developed by: <span class="text-primary">Your Name</span></a></div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="index1.js"></script>
 
-
-
-          <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
